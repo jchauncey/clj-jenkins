@@ -5,4 +5,5 @@
             :url "http://opensource.org/licenses/MIT"}
   :dependencies [[org.clojure/clojure "1.5.0"]
                  [clj-http "0.6.3"]
-                 [cheshire "5.1.1"]])
+                 [cheshire "5.1.1"]]
+  :plugins [[lein-clojars "0.9.1"]])
