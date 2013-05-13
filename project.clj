@@ -1,4 +1,4 @@
-(defproject com.rallydev/clj-jenkins "0.1.4"
+(defproject com.rallydev/clj-jenkins "0.1.5"
   :description "Clojure library for interacting with jenkins"
   :url "https://github.com/RallySoftware/clj-jenkins"
   :license {:name "The MIT License (MIT)"

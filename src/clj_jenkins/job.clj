@@ -61,9 +61,10 @@
 (defn- job-url [job]
   (str jenkins-url "/job/" job "/api/json"))
 
-(defn- build-url [job params]
-  (let [params-string (params->query-string params)]
-    (str jenkins-url "/job/" job "/buildWithParameters?" params-string)))
+(defn build-url [job params]
+  (if (empty? params)
+    (str jenkins-url "/job/" job "/build")
+    (str jenkins-url "/job/" job "/buildWithParameters?" (params->query-string params))))
 
 (defn- params->query-string [params]
   (s/join "&"
