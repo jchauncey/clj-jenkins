@@ -16,11 +16,6 @@
     (client/get {:basic-auth auth-tokens})
     :body (json/parse-string)))
 
-(defn post-job [job]
-  (-> (job-url job)
-    (client/post {:basic-auth auth-tokens})
-    :body (json/parse-string)))
-
 (defn builds [job]
   ((get-job job) "builds"))
 
