@@ -1,4 +1,4 @@
-(ns clj_jenkins.pipeline
+(ns clj-jenkins.pipeline
   (:require [clj-jenkins.job :as job]
             [clj-jenkins.util :as util]
             [clj-http.client :as client]))
