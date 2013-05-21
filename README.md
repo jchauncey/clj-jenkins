@@ -1,13 +1,37 @@
 # clj-jenkins
+Clojure Library for interacting with jenkins
 
-A Clojure library designed to ... well, that part is up to you.
+# Leiningen
+https://clojars.org/com.rallydev/clj-jenkins
+```clojure
+[com.rallydev/clj-flowdock "0.1.5"]
+```
 
-## Usage
+# Maven
+```xml
+<dependency>
+  <groupId>com.rallydev</groupId>
+  <artifactId>clj-jenkins</artifactId>
+  <version>0.1.5</version>
+</dependency>
+```
 
-FIXME
+# Environment Variables
+```bash
+export JENKINS_URL=<url to jenkins>
+export JENKINS_USERNAME=<username for oauth>
+export JENKINS_API_TOKEN=<users oauth api token>
+```
 
-## License
 
-Copyright © 2013 FIXME
+# Dependencies
+```clojure
+[org.clojure/clojure "1.5.0"]
+[clj-http "0.6.3"]
+[cheshire "5.1.1"]
+```
 
-Distributed under the Eclipse Public License, the same as Clojure.
+# License
+Copyright (c) Rally Software Development Corp. 2013  
+Distributed under the MIT License.
+
